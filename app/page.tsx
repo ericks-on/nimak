@@ -1,103 +1,104 @@
-import Image from "next/image";
+import Link from 'next/link'
+import { 
+  CalendarDaysIcon, 
+  UsersIcon, 
+  TrophyIcon, 
+  StarIcon,
+  ArrowRightIcon,
+  PlayCircleIcon,
+  CheckCircleIcon,
+  ClipboardDocumentListIcon,
+  MegaphoneIcon,
+  BuildingOfficeIcon
+} from '@heroicons/react/24/outline'
+import HeroSection from '@/components/HeroSection'
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const services = [
+    {
+      icon: CalendarDaysIcon,
+      title: 'Event Planning',
+      description: 'Comprehensive event planning from concept to execution, ensuring every detail is perfect.',
+      features: ['Venue Selection', 'Timeline Management', 'Vendor Coordination']
+    },
+    {
+      icon: UsersIcon,
+      title: 'Conference Management',
+      description: 'Professional conference organization with seamless registration and attendee management.',
+      features: ['Speaker Coordination', 'Registration Systems', 'Live Streaming']
+    },
+    {
+      icon: MegaphoneIcon,
+      title: 'Media Services',
+      description: 'Complete media solutions including photography, videography, and live broadcasting.',
+      features: ['Photography', 'Video Production', 'Live Broadcasting']
+    },
+    {
+      icon: BuildingOfficeIcon,
+      title: 'Corporate Events',
+      description: 'Tailored corporate events that align with your business objectives and brand identity.',
+      features: ['Team Building', 'Product Launches', 'Awards Ceremonies']
+    }
+  ]
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+  const stats = [
+    { number: '500+', label: 'Events Organized' },
+    { number: '50K+', label: 'Attendees Served' },
+    { number: '98%', label: 'Client Satisfaction' },
+    { number: '10+', label: 'Years Experience' }
+  ]
+
+  const testimonials = [
+    {
+      name: 'Sarah Johnson',
+      company: 'Tech Innovations Inc.',
+      role: 'Marketing Director',
+      content: 'Nimak transformed our annual conference into an unforgettable experience. Their attention to detail and professional execution exceeded our expectations.',
+      rating: 5
+    },
+    {
+      name: 'Michael Chen',
+      company: 'Global Healthcare Solutions',
+      role: 'CEO',
+      content: 'Working with Nimak was seamless. They handled every aspect of our product launch event flawlessly, allowing us to focus on our message.',
+      rating: 5
+    },
+    {
+      name: 'Emily Rodriguez',
+      company: 'Creative Design Studio',
+      role: 'Event Coordinator',
+      content: 'The team at Nimak brought our vision to life. Their creativity and professionalism made our charity gala a tremendous success.',
+      rating: 5
+    }
+  ]
+
+  const recentEvents = [
+    {
+      title: 'Tech Innovation Summit 2024',
+      date: 'March 15, 2024',
+      location: 'New York Convention Center',
+      attendees: '2,500+',
+      image: '/api/placeholder/400/250'
+    },
+    {
+      title: 'Healthcare Leadership Forum',
+      date: 'February 28, 2024',
+      location: 'Grand Hyatt Hotel',
+      attendees: '800+',
+      image: '/api/placeholder/400/250'
+    },
+    {
+      title: 'Sustainable Business Conference',
+      date: 'January 20, 2024',
+      location: 'Metropolitan Center',
+      attendees: '1,200+',
+      image: '/api/placeholder/400/250'
+    }
+  ]
+
+  return (
+    <>
+    <HeroSection />
+    </>
+  )
 }
