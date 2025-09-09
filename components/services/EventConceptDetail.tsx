@@ -99,7 +99,7 @@ const EventConceptDetail = ({ className = '' }: EventConceptDetailProps) => {
           <div className="max-w-4xl mx-auto">
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
               We take a holistic approach to crafting creative event concepts that resonate with your audience. 
-              From the first touchpoint—like the invitation or registration—through to the event's close, we focus 
+              From the first touchpoint—like the invitation or registration—through to the event&apos;s close, we focus 
               on designing an unforgettable attendee experience.
             </p>
           </div>
@@ -185,7 +185,7 @@ const EventConceptDetail = ({ className = '' }: EventConceptDetailProps) => {
 
               <div className="mt-8 pt-6 border-t border-gray-100">
                 <blockquote className="text-nimak-blue italic text-lg font-medium">
-                  "Every event should be a story worth telling"
+                  &quot;Every event should be a story worth telling&quot;
                 </blockquote>
               </div>
             </div>
@@ -204,7 +204,7 @@ const EventConceptDetail = ({ className = '' }: EventConceptDetailProps) => {
             Our Goal
           </h3>
           <p className="text-2xl text-gray-700 leading-relaxed mb-8 max-w-3xl mx-auto">
-            "Our goal is to tell your story in a way that your audience not only hears—but <span className="text-nimak-blue font-semibold">feels</span>."
+            &quot;Our goal is to tell your story in a way that your audience not only hears—but <span className="text-nimak-blue font-semibold">feels</span>.&quot;
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

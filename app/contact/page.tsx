@@ -327,7 +327,7 @@ export default function ContactPage() {
               Get In Touch
             </h1>
             <p className="text-xl lg:text-2xl font-light mb-8 opacity-90">
-              Let's create unforgettable moments together
+              Let&apos;s create unforgettable moments together
             </p>
             <p className="text-lg opacity-80 leading-relaxed">
               Ready to plan your next event? Our team is here to help you every step of the way. 
@@ -447,7 +447,7 @@ export default function ContactPage() {
                   Send Us a Message
                 </h2>
                 <p className="text-gray-600 mb-8">
-                  Fill out the form below and we'll get back to you within 24 hours.
+                  Fill out the form below and we&apos;ll get back to you within 24 hours.
                 </p>
 
                 {/* Status Messages */}
@@ -455,7 +455,7 @@ export default function ContactPage() {
                   <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg flex items-center">
                     <CheckCircleIcon className="h-5 w-5 text-green-600 mr-3" />
                     <p className="text-green-800 text-sm">
-                      Thank you! Your message has been sent successfully. We'll contact you soon.
+                      Thank you! Your message has been sent successfully. We&apos;ll contact you soon.
                     </p>
                   </div>
                 )}
@@ -650,7 +650,7 @@ export default function ContactPage() {
                 </form>
 
                 <p className="text-center text-sm text-gray-500 mt-6">
-                  * Required fields. We'll respond within 24 hours.
+                  * Required fields. We&apos;ll respond within 24 hours.
                 </p>
               </div>
             </div>
@@ -700,7 +700,7 @@ export default function ContactPage() {
 
           <div className="text-center mt-12">
             <p className="text-gray-600 mb-4">
-              Don't see your question here?
+              Don&apos;t see your question here?
             </p>
             <a 
               href="mailto:info@nimakmediaevents.com"

@@ -3,7 +3,6 @@
 import { useEffect, useState } from 'react'
 import { 
   UserGroupIcon,
-  HandshakeIcon,
   TrophyIcon,
   CurrencyDollarIcon,
   ArrowRightIcon,
@@ -12,6 +11,7 @@ import {
   ChartBarIcon,
   GlobeAltIcon
 } from '@heroicons/react/24/outline'
+import { HandshakeIcon } from 'lucide-react'
 
 interface B2BMeetingsDetailProps {
   className?: string

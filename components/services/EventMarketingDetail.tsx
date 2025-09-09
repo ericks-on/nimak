@@ -97,7 +97,7 @@ const EventMarketingDetail = ({ className = '' }: EventMarketingDetailProps) => 
           
           <div className="max-w-4xl mx-auto">
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              We elevate your brand's presence through impactful event marketing strategies that engage and inspire. 
+              We elevate your brand&apos;s presence through impactful event marketing strategies that engage and inspire. 
               Our comprehensive approach ensures your message reaches the right audience at the right moment.
             </p>
           </div>
@@ -209,7 +209,7 @@ const EventMarketingDetail = ({ className = '' }: EventMarketingDetailProps) => 
 
           <div className="mt-8 pt-6 border-t border-gray-200">
             <p className="text-gray-600 italic">
-              "Marketing is no longer about the stuff you make, but about the stories you tell and experiences you create."
+              &quot;Marketing is no longer about the stuff you make, but about the stories you tell and experiences you create.&quot;
             </p>
           </div>
         </div>

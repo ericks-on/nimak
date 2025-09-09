@@ -119,7 +119,7 @@ const WhyChooseUs = ({ className = '' }: WhyChooseUsProps) => {
             Excellence in every detail
           </h3>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            When you choose Nimak Media & Events, you're partnering with a team dedicated to 
+            When you choose Nimak Media & Events, youre partnering with a team dedicated to 
             transforming your vision into extraordinary experiences that exceed expectations.
           </p>
         </div>
@@ -226,7 +226,7 @@ const WhyChooseUs = ({ className = '' }: WhyChooseUsProps) => {
           
           <div className="mt-8 pt-6 border-t border-gray-100">
             <p className="text-gray-500 text-sm italic">
-              "Excellence is not a skill, it's an attitude we bring to every event."
+              &quot;Excellence is not a skill, it&apos;s an attitude we bring to every event.&quot;
             </p>
           </div>
         </div>

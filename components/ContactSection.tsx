@@ -107,7 +107,7 @@ const ContactSection = ({ className = '' }: ContactSectionProps) => {
             Get In Touch
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            Reach out to us through our various channels. We're here to help you bring your vision to life.
+            Reach out to us through our various channels. We&apos;re here to help you bring your vision to life.
           </p>
         </div>
 
@@ -229,7 +229,7 @@ const ContactSection = ({ className = '' }: ContactSectionProps) => {
               Partner with us to create unforgettable moments
             </h3>
             <p className="text-xl text-gray-700 leading-relaxed mb-8 max-w-3xl mx-auto">
-              Whether you're planning a corporate event, product launch, or special celebration, 
+              Whether you&apos;re planning a corporate event, product launch, or special celebration, 
               our team is ready to transform your vision into an extraordinary experience.
             </p>
             
