@@ -26,10 +26,7 @@ const Footer = () => {
   const quickLinks = [
     { name: 'Home', href: '/' },
     { name: 'About Us', href: '/about' },
-    { name: 'Our Team', href: '/team' },
-    { name: 'Careers', href: '/careers' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'Privacy Policy', href: '/privacy' },
+    { name: 'Services', href: '/services' },
   ]
 
   const services = [
@@ -41,11 +38,6 @@ const Footer = () => {
     { name: 'Digital Marketing', href: '/services/marketing' },
   ]
 
-  const recentConferences = [
-    { name: 'Tech Summit 2024', date: 'March 15, 2024' },
-    { name: 'Healthcare Innovation Forum', date: 'February 28, 2024' },
-    { name: 'Sustainable Business Conference', date: 'January 20, 2024' },
-  ]
 
   return (
     <footer className="bg-gray-900 text-white">
@@ -78,19 +70,28 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-sm">
                 <PhoneIcon className="h-5 w-5 text-nimak-light flex-shrink-0" />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <span className="text-gray-300">+254 721 330 158</span>
               </div>
               <div className="flex items-center space-x-3 text-sm">
                 <EnvelopeIcon className="h-5 w-5 text-nimak-light flex-shrink-0" />
-                <span className="text-gray-300">info@nimakmedia.com</span>
+                <span className="text-gray-300">info@nimakevents.com</span>
+              </div>
+              <div className="flex items-center space-x-3 text-sm">
+                <EnvelopeIcon className="h-5 w-5 text-nimak-light flex-shrink-0" />
+                <span className="text-gray-300">nimakevents@gmail.com</span>
               </div>
               <div className="flex items-start space-x-3 text-sm">
                 <MapPinIcon className="h-5 w-5 text-nimak-light flex-shrink-0 mt-0.5" />
                 <span className="text-gray-300">
-                  123 Business Avenue<br />
-                  New York, NY 10001<br />
-                  United States
+                  Karen, Nairobi<br />
+                  Kenya
                 </span>
+              </div>
+              <div className="flex items-center space-x-3 text-sm">
+                <svg className="h-5 w-5 text-nimak-light flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0 0V3" />
+                </svg>
+                <span className="text-gray-300">www.nimakmediaevents.com</span>
               </div>
             </div>
 
@@ -212,18 +213,7 @@ const Footer = () => {
               </form>
             </div>
 
-            {/* Recent Conferences */}
-            <div>
-              <h4 className="text-base font-semibold text-white mb-4">Recent Conferences</h4>
-              <ul className="space-y-3">
-                {recentConferences.map((conference, index) => (
-                  <li key={index} className="border-l-2 border-nimak-blue pl-3">
-                    <div className="text-sm font-medium text-gray-200">{conference.name}</div>
-                    <div className="text-xs text-gray-400">{conference.date}</div>
-                  </li>
-                ))}
-              </ul>
-            </div>
+
           </div>
         </div>
       </div>

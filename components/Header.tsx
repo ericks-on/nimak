@@ -34,9 +34,9 @@ const Header = () => {
   ]
 
   const contactInfo = {
-    phone: '+1 (555) 123-4567',
-    email: 'info@nimakmedia.com',
-    location: 'New York, NY'
+    phone: '+254 721 330 158',
+    email: 'info@nimakevents.com',
+    location: 'Karen, Nairobi'
   }
 
   return (
