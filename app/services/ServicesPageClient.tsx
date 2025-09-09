@@ -54,12 +54,12 @@ const ServicesPageClient = () => {
   // Enhanced services data
   const services = [
     {
-      id: 'event-concept',
+      id: 'event-concept-creation',
       image: '/background.jpeg',
       title: 'Event Concept Creation',
       description: 'We take a holistic approach to crafting creative event concepts that resonate with your audience and deliver unforgettable experiences.',
       features: ['Attendee Journey Mapping', 'Theme Development', 'Interactive Elements', 'Sensory Production'],
-      href: '/services/event-concept',
+      href: '/services/event-concept-creation',
       category: 'Event Management'
     },
     {
@@ -320,7 +320,7 @@ const ServicesPageClient = () => {
 
 
       {/* CTA Section */}
-      <section id="consultation" className="py-20 bg-gradient-nimak text-white">
+      <section id="consultation" className="py-12 bg-gradient-nimak text-white mb-4">
         <div className="container-custom mx-auto text-center">
           <div 
             className={`transition-all duration-1000 ${
@@ -329,54 +329,54 @@ const ServicesPageClient = () => {
                 : 'opacity-0 translate-y-8'
             }`}
           >
-            <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-              Let&quot;s Plan Your Next Event
+            <h2 className="text-2xl lg:text-3xl font-bold mb-4 text-white drop-shadow-lg">
+              Let&apos;s Plan Your Next Event
             </h2>
             
-            <p className="text-xl mb-12 max-w-3xl mx-auto opacity-90">
+            <p className="text-lg mb-8 max-w-2xl mx-auto text-white">
               Ready to create an unforgettable experience? Get in touch with our expert team 
               for a free consultation and detailed proposal.
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               <div className="text-center">
-                <PhoneIcon className="h-12 w-12 mx-auto mb-4 opacity-90" />
-                <h3 className="text-lg font-semibold mb-2">Call Us</h3>
-                <p className="opacity-90">+254 721 330 158</p>
+                <PhoneIcon className="h-8 w-8 mx-auto mb-3 text-white/90 drop-shadow-sm" />
+                <h2 className="text-base font-semibold mb-1 text-white">Call Us</h2>
+                <p className="text-white text-sm">+254 721 330 158</p>
               </div>
               
               <div className="text-center">
-                <EnvelopeIcon className="h-12 w-12 mx-auto mb-4 opacity-90" />
-                <h3 className="text-lg font-semibold mb-2">Email Us</h3>
-                <p className="opacity-90">info@nimakmediaevents.com</p>
+                <EnvelopeIcon className="h-8 w-8 mx-auto mb-3 text-white/90 drop-shadow-sm" />
+                <h2 className="text-base font-semibold mb-1 text-white">Email Us</h2>
+                <p className="text-white/90 text-sm">info@nimakevents.com</p>
               </div>
               
               <div className="text-center">
-                <CalendarDaysIcon className="h-12 w-12 mx-auto mb-4 opacity-90" />
-                <h3 className="text-lg font-semibold mb-2">Book Meeting</h3>
-                <p className="opacity-90">Free consultation available</p>
+                <CalendarDaysIcon className="h-8 w-8 mx-auto mb-3 text-white/90 drop-shadow-sm" />
+                <h2 className="text-base font-semibold mb-1 text-white">Book Meeting</h2>
+                <p className="text-white/90 text-sm">Free consultation available</p>
               </div>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
               <Link 
                 href="/contact"
-                className="btn btn-primary btn-lg bg-white text-nimak-navy hover:bg-gray-100 group"
+                className="btn btn-primary bg-white text-nimak-navy hover:bg-gray-100 group shadow-lg"
               >
                 Get Free Consultation
-                <ArrowRightIcon className="h-5 w-5 ml-2 transition-transform group-hover:translate-x-1" />
+                <ArrowRightIcon className="h-4 w-4 ml-2 transition-transform group-hover:translate-x-1" />
               </Link>
               
               <a 
                 href="tel:+254721330158"
-                className="btn btn-outline btn-lg border-white text-white hover:bg-white hover:text-nimak-navy group"
+                className="btn  border-2 border-white text-white hover:bg-white hover:text-nimak-navy group"
               >
                 Call Now
-                <PhoneIcon className="h-5 w-5 ml-2 transition-transform group-hover:scale-110" />
+                <PhoneIcon className="h-4 w-4 ml-2 transition-transform group-hover:scale-110" />
               </a>
             </div>
             
-            <p className="mt-8 text-sm opacity-75">
+            <p className="mt-6 text-sm text-white/80">
               Join 100+ satisfied clients who trust Nimak Media & Events for their most important events.
             </p>
           </div>

@@ -378,285 +378,78 @@ export default function ContactPage() {
       </section>
 
       {/* Main Content: Contact Info + Form */}
-      <section className="py-20 bg-gradient-nimak-subtle">
-        <div className="container-custom mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            
+    <section className="py-20 bg-gradient-nimak-subtle">
+      <div className="container-custom mx-auto px-4">
+        {/* Main container for the content */}
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-extrabold text-center text-nimak-navy mb-12">
+            Get in Touch
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Contact Information */}
-            <div>
-              <h2 className="text-3xl font-bold text-nimak-navy mb-8">
-                Office Information
-              </h2>
-              
-              <div className="space-y-6 mb-12">
-                {contactInfo.map((info, index) => (
-                  <div key={info.label} className="flex items-start space-x-4">
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-nimak-blue/10 rounded-lg flex items-center justify-center">
-                        <info.icon className="h-6 w-6 text-nimak-blue" />
+            <div className="space-y-8">
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 className="text-2xl font-bold text-nimak-navy mb-6">
+                  Office Information
+                </h3>
+                <div className="space-y-6">
+                  {contactInfo.map((info, index) => (
+                    <div key={info.label} className="flex items-start space-x-4">
+                      <div className="flex-shrink-0">
+                        <div className="w-10 h-10 bg-nimak-blue/10 rounded-full flex items-center justify-center">
+                          <info.icon className="h-5 w-5 text-nimak-blue" />
+                        </div>
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <p className="text-sm font-medium text-gray-500 mb-1">
+                          {info.label}
+                        </p>
+                        {info.href ? (
+                          <a 
+                            href={info.href}
+                            className="text-nimak-navy hover:text-nimak-blue transition-colors duration-300 font-medium break-all"
+                            target={info.href.startsWith('http') ? '_blank' : undefined}
+                            rel={info.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                          >
+                            {info.value}
+                          </a>
+                        ) : (
+                          <p className="text-nimak-navy font-medium">{info.value}</p>
+                        )}
+                        <p className="text-gray-600 text-sm">{info.description}</p>
                       </div>
                     </div>
-                    <div className="flex-1 min-w-0">
-                      <p className="text-sm font-medium text-gray-500 mb-1">
-                        {info.label}
-                      </p>
-                      {info.href ? (
-                        <a 
-                          href={info.href}
-                          className="text-nimak-navy hover:text-nimak-blue transition-colors duration-300 font-medium break-all"
-                          target={info.href.startsWith('http') ? '_blank' : undefined}
-                          rel={info.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                        >
-                          {info.value}
-                        </a>
-                      ) : (
-                        <p className="text-nimak-navy font-medium">{info.value}</p>
-                      )}
-                      <p className="text-gray-600 text-sm">{info.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              {/* Map Placeholder */}
-              <div className="bg-white rounded-xl p-8 text-center shadow-lg">
-                <MapPinIcon className="h-16 w-16 text-nimak-blue mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-nimak-navy mb-2">
-                  Find Us Here
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Our office is located in Karen, Nairobi. 
-                  <br />Office visits are available by appointment.
-                </p>
-                <a 
-                  href="https://maps.google.com/?q=Karen,Nairobi,Kenya"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-outline btn-sm"
-                >
-                  <MapPinIcon className="h-4 w-4 mr-2" />
-                  View on Google Maps
-                </a>
+                  ))}
+                </div>
               </div>
             </div>
 
-            {/* Contact Form */}
-            <div>
-              <div className="bg-white rounded-2xl p-8 shadow-xl">
-                <h2 className="text-3xl font-bold text-nimak-navy mb-2">
-                  Send Us a Message
-                </h2>
-                <p className="text-gray-600 mb-8">
-                  Fill out the form below and we&apos;ll get back to you within 24 hours.
-                </p>
-
-                {/* Status Messages */}
-                {submitStatus === 'success' && (
-                  <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg flex items-center">
-                    <CheckCircleIcon className="h-5 w-5 text-green-600 mr-3" />
-                    <p className="text-green-800 text-sm">
-                      Thank you! Your message has been sent successfully. We&apos;ll contact you soon.
-                    </p>
-                  </div>
-                )}
-
-                {submitStatus === 'error' && (
-                  <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg flex items-center">
-                    <ExclamationTriangleIcon className="h-5 w-5 text-red-600 mr-3" />
-                    <p className="text-red-800 text-sm">
-                      Sorry, there was an error sending your message. Please try again.
-                    </p>
-                  </div>
-                )}
-
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  {/* Full Name */}
-                  <div>
-                    <label htmlFor="fullName" className="form-label">
-                      Full Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="fullName"
-                      name="fullName"
-                      value={formData.fullName}
-                      onChange={handleInputChange}
-                      className={`form-input ${formErrors.fullName ? 'form-input-error' : ''}`}
-                      placeholder="Enter your full name"
-                    />
-                    {formErrors.fullName && (
-                      <p className="form-error">{formErrors.fullName}</p>
-                    )}
-                  </div>
-
-                  {/* Email */}
-                  <div>
-                    <label htmlFor="email" className="form-label">
-                      Email Address *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      className={`form-input ${formErrors.email ? 'form-input-error' : ''}`}
-                      placeholder="Enter your email address"
-                    />
-                    {formErrors.email && (
-                      <p className="form-error">{formErrors.email}</p>
-                    )}
-                  </div>
-
-                  {/* Phone and Company */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <label htmlFor="phone" className="form-label">
-                        Phone Number
-                      </label>
-                      <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleInputChange}
-                        className="form-input"
-                        placeholder="Your phone number"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="company" className="form-label">
-                        Company/Organization
-                      </label>
-                      <input
-                        type="text"
-                        id="company"
-                        name="company"
-                        value={formData.company}
-                        onChange={handleInputChange}
-                        className="form-input"
-                        placeholder="Your company name"
-                      />
-                    </div>
-                  </div>
-
-                  {/* Event Type and Date */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <label htmlFor="eventType" className="form-label">
-                        Event Type
-                      </label>
-                      <select
-                        id="eventType"
-                        name="eventType"
-                        value={formData.eventType}
-                        onChange={handleInputChange}
-                        className="form-select"
-                      >
-                        <option value="">Select event type</option>
-                        {eventTypes.map(type => (
-                          <option key={type} value={type}>{type}</option>
-                        ))}
-                      </select>
-                    </div>
-                    <div>
-                      <label htmlFor="eventDate" className="form-label">
-                        Preferred Event Date
-                      </label>
-                      <input
-                        type="date"
-                        id="eventDate"
-                        name="eventDate"
-                        value={formData.eventDate}
-                        onChange={handleInputChange}
-                        className="form-input"
-                      />
-                    </div>
-                  </div>
-
-                  {/* Expected Guests and Budget */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <label htmlFor="expectedGuests" className="form-label">
-                        Expected Guests
-                      </label>
-                      <input
-                        type="number"
-                        id="expectedGuests"
-                        name="expectedGuests"
-                        value={formData.expectedGuests}
-                        onChange={handleInputChange}
-                        className="form-input"
-                        placeholder="Number of guests"
-                        min="1"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="budgetRange" className="form-label">
-                        Budget Range
-                      </label>
-                      <select
-                        id="budgetRange"
-                        name="budgetRange"
-                        value={formData.budgetRange}
-                        onChange={handleInputChange}
-                        className="form-select"
-                      >
-                        <option value="">Select budget range</option>
-                        {budgetRanges.map(range => (
-                          <option key={range} value={range}>{range}</option>
-                        ))}
-                      </select>
-                    </div>
-                  </div>
-
-                  {/* Message */}
-                  <div>
-                    <label htmlFor="message" className="form-label">
-                      Message/Requirements *
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      rows={5}
-                      className={`form-textarea ${formErrors.message ? 'form-textarea-error' : ''}`}
-                      placeholder="Tell us about your event vision, specific requirements, or any questions you have..."
-                    />
-                    {formErrors.message && (
-                      <p className="form-error">{formErrors.message}</p>
-                    )}
-                  </div>
-
-                  {/* Submit Button */}
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="btn btn-primary btn-lg w-full group disabled:opacity-50 disabled:cursor-not-allowed"
-                  >
-                    {isSubmitting ? (
-                      <>
-                        <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
-                        Sending Message...
-                      </>
-                    ) : (
-                      <>
-                        Send Message
-                        <PaperAirplaneIcon className="h-5 w-5 ml-2 transition-transform group-hover:translate-x-1" />
-                      </>
-                    )}
-                  </button>
-                </form>
-
-                <p className="text-center text-sm text-gray-500 mt-6">
-                  * Required fields. We&apos;ll respond within 24 hours.
-                </p>
+            {/* Map Placeholder */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg">
+              <div className="w-full h-64 bg-gray-200 rounded-xl mb-6">
+                <MapPinIcon className="h-16 w-16 text-nimak-blue mx-auto mt-20" />
               </div>
+              <h3 className="text-xl font-bold text-nimak-navy mb-2">
+                Find Our Office
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Our office is located in Karen, Nairobi. Office visits are available by appointment.
+              </p>
+              <a 
+                href="https://maps.google.com/?q=Karen,Nairobi,Kenya"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary w-full"
+              >
+                <MapPinIcon className="h-4 w-4 mr-2" />
+                View on Google Maps
+              </a>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* FAQ Section */}
       <section className="py-20 bg-white">

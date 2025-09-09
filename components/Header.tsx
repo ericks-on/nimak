@@ -127,12 +127,16 @@ const Header = () => {
 
             {/* Desktop CTA Button */}
             <div className="hidden lg:flex items-center space-x-4">
-              <button className="btn-outline btn-sm">
-                Catalogue
-              </button>
-              <button className="btn-primary btn-sm">
-                Get Quote
-              </button>
+              <Link href='/contact'>
+                <button className="btn-outline btn-sm">
+                  Catalogue
+                </button>
+              </Link>
+              <Link href="/contact">
+                <button className="btn-primary btn-sm">
+                  Get Quote
+                </button>
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
