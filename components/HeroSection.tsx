@@ -66,19 +66,79 @@ const HeroSection = ({
       aria-label="Hero section"
     >
       {/* Main Hero Container with Image */}
-      <div className="flex-1 flex items-center justify-center">
+      <div className="relative flex-1 flex items-center justify-center">
         {/* Next.js Image Background */}
         <Image
           src={backgroundImage}
           alt="Professional event management background"
           // fill
           width={1920}
-          height={800}
+          height={1080}
           className="object-cover hero-img"
           priority
         />
-
-
+        
+        {/* Light Overlay */}
+        <div className="absolute inset-0 bg-black/30 backdrop-blur-[1px]" />
+        
+        {/* Hero Content */}
+        <div className="absolute inset-0 flex items-center justify-center z-10">
+          <div className="text-center text-white px-6 max-w-4xl mx-auto">
+            <div 
+              className={`transition-all duration-1000 ${
+                isVisible 
+                  ? 'opacity-100 translate-y-0' 
+                  : 'opacity-0 translate-y-8'
+              }`}
+            >
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white drop-shadow-lg">
+                Your Vision,
+                <span className="block text-nimak-light"> Our Expertise</span>
+              </h1>
+              
+              <p className="text-xl md:text-2xl mb-8 text-white/90 font-medium max-w-2xl mx-auto leading-relaxed drop-shadow">
+                Creating unforgettable experiences that leave lasting impressions. 
+                Where every event becomes a masterpiece.
+              </p>
+              
+              <div 
+                className={`flex flex-col sm:flex-row gap-4 justify-center items-center transition-all duration-1000 delay-300 ${
+                  isVisible 
+                    ? 'opacity-100 translate-y-0' 
+                    : 'opacity-0 translate-y-8'
+                }`}
+              >
+                <Link 
+                  href="/contact"
+                  className="btn btn-primary btn-lg bg-nimak-blue hover:bg-nimak-navy text-white shadow-xl hover:shadow-2xl hover:-translate-y-1 group transition-all duration-300"
+                >
+                  Start Planning Your Event
+                  <ArrowRightIcon className="h-5 w-5 ml-2 transition-transform group-hover:translate-x-1" />
+                </Link>
+                
+                <Link 
+                  href="/services"
+                  className="btn btn-outline btn-lg border-2 border-white text-white hover:bg-white hover:text-nimak-navy group transition-all duration-300"
+                >
+                  Explore Our Services
+                  <PlayCircleIcon className="h-5 w-5 ml-2 transition-transform group-hover:scale-110" />
+                </Link>
+              </div>
+              
+              <div 
+                className={`mt-12 text-white/80 transition-all duration-1000 delay-500 ${
+                  isVisible 
+                    ? 'opacity-100 translate-y-0' 
+                    : 'opacity-0 translate-y-4'
+                }`}
+              >
+                <p className="text-sm md:text-base font-medium">
+                  Trusted by 100+ clients • 5+ years of excellence • Kenya&apos;s premier event management company
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Services Overview Section */}

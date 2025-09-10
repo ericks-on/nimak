@@ -216,7 +216,7 @@ const WhyChooseUs = ({ className = '' }: WhyChooseUsProps) => {
             </Link>
             
             <Link 
-              href="/portfolio"
+              href="/services"
               className="btn btn-outline btn-lg group"
             >
               View Our Work
