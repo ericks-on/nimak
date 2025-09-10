@@ -55,7 +55,7 @@ const ServicesPageClient = () => {
   const services = [
     {
       id: 'event-concept-creation',
-      image: '/background.jpeg',
+      image: '/images/event2.jpg',
       title: 'Event Concept Creation',
       description: 'We take a holistic approach to crafting creative event concepts that resonate with your audience and deliver unforgettable experiences.',
       features: ['Attendee Journey Mapping', 'Theme Development', 'Interactive Elements', 'Sensory Production'],
@@ -64,7 +64,7 @@ const ServicesPageClient = () => {
     },
     {
       id: 'brand-management',
-      image: '/background.jpeg',
+      image: '/images/event3.jpg',
       title: 'Brand Management',
       description: 'Strategic brand development and management services that enhance your corporate identity and market presence.',
       features: ['Brand Strategy', 'Visual Identity', 'Brand Guidelines', 'Market Positioning'],
@@ -73,7 +73,7 @@ const ServicesPageClient = () => {
     },
     {
       id: 'event-marketing',
-      image: '/background.jpeg',
+      image: '/images/event7.jpg',
       title: 'Event Marketing',
       description: 'Elevate your brand\'s presence through impactful event marketing strategies that engage and inspire your target audience.',
       features: ['Experiential Marketing', 'Promotional Events', 'Brand Activations', 'Digital Integration'],
@@ -82,7 +82,7 @@ const ServicesPageClient = () => {
     },
     {
       id: 'b2b-meetings',
-      image: '/background.jpeg',
+      image: '/images/p12.jpg',
       title: 'B2B Meetings',
       description: 'Strategic, pre-arranged appointments to connect buyers, sellers, and partners for maximum business value and ROI.',
       features: ['Strategic Matchmaking', 'Pre-qualified Connections', 'Business Development', 'ROI Optimization'],
@@ -91,7 +91,7 @@ const ServicesPageClient = () => {
     },
     {
       id: 'pr-communication',
-      image: '/background.jpeg',
+      image: '/images/p15.jpg',
       title: 'PR & Communication',
       description: 'End-to-end communication support to strengthen your public image and enhance stakeholder relationships.',
       features: ['Media Relations', 'Crisis Communication', 'Content Strategy', 'Stakeholder Engagement'],
@@ -100,7 +100,7 @@ const ServicesPageClient = () => {
     },
     {
       id: 'event-design',
-      image: '/background.jpeg',
+      image: '/images/event10.jpg',
       title: 'Event Design & Production',
       description: 'Bring your event vision to life with stunning design and flawless execution that creates memorable experiences.',
       features: ['Creative Design', 'Technical Production', 'Venue Transformation', 'Audio-Visual Solutions'],
@@ -109,7 +109,7 @@ const ServicesPageClient = () => {
     },
     {
       id: 'vendor-management',
-      image: '/background.jpeg',
+      image: '/images/p16.jpg',
       title: 'Vendor Management',
       description: 'Ensure every vendor meets your standards and delivers quality service through our comprehensive management approach.',
       features: ['Vendor Selection', 'Quality Assurance', 'Contract Management', 'Performance Monitoring'],
@@ -118,7 +118,7 @@ const ServicesPageClient = () => {
     },
     {
       id: 'logistics-management',
-      image: '/background.jpeg',
+      image: '/images/event8.jpg',
       title: 'Logistics Management',
       description: 'End-to-end logistics support to keep your event running smoothly with precise coordination and timing.',
       features: ['Timeline Management', 'Resource Coordination', 'Transportation', 'On-site Management'],

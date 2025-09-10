@@ -121,7 +121,7 @@ const AboutSection = ({ className = '' }: AboutSectionProps) => {
               {/* Main Image */}
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <Image
-                  src="/background.jpeg"
+                  src="/images/event4.jpg"
                   alt="Professional event management and planning services by Nimak Media & Events"
                   width={600}
                   height={400}

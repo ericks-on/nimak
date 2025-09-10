@@ -28,8 +28,8 @@ const Header = () => {
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Our Services', href: '/services' },
-    { name: 'Our Conferences', href: '/conferences' },
-    { name: 'Gallery', href: '/gallery' },
+    // { name: 'Our Conferences', href: '/conferences' },
+    // { name: 'Gallery', href: '/gallery' },
     { name: 'Contacts', href: '/contacts' },
   ]
 

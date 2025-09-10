@@ -18,7 +18,7 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({ 
-  backgroundImage = '/background.jpeg',
+  backgroundImage = '/images/hero2.png',
   className = '' 
 }: HeroSectionProps) => {
   const [isVisible, setIsVisible] = useState(false)
@@ -66,15 +66,15 @@ const HeroSection = ({
       aria-label="Hero section"
     >
       {/* Main Hero Container with Image */}
-      <div className="flex-1 flex items-center justify-center min-h-500px">
+      <div className="flex-1 flex items-center justify-center">
         {/* Next.js Image Background */}
         <Image
           src={backgroundImage}
           alt="Professional event management background"
           // fill
           width={1920}
-          height={1080}
-          className="object-cover"
+          height={800}
+          className="object-cover hero-img"
           priority
         />
 

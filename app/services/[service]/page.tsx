@@ -141,7 +141,7 @@ const servicesData: Record<string, ServiceData> = {
     description: 'We take a holistic approach to crafting creative event concepts that resonate with your audience. From the first touchpoint—like the invitation or registration—through to the event\'s close, we focus on designing an unforgettable attendee experience that tells your story in a way your audience not only hears—but feels.',
     // Pass the icon name as a string
     icon: 'LightBulbIcon',
-    heroImage: '/background.jpeg',
+    heroImage: '/images/event2.jpg',
     processSteps: [
       {
         title: 'Mapping the Attendee Journey',
@@ -184,7 +184,7 @@ const servicesData: Record<string, ServiceData> = {
     subtitle: 'Strategic Brand Development and Management Services',
     description: 'Our comprehensive brand management services help you build, maintain, and enhance your corporate identity. We develop strategic approaches to brand positioning, identity creation, and activation that strengthen your market presence and drive business growth.',
     icon: 'BuildingStorefrontIcon',
-    heroImage: '/background.jpeg',
+    heroImage: '/images/event3.jpg',
     processSteps: [
       {
         title: 'Brand Strategy Development',
@@ -222,7 +222,7 @@ const servicesData: Record<string, ServiceData> = {
     subtitle: 'Impactful Event Marketing Strategies',
     description: 'We elevate your brand\'s presence through impactful event marketing strategies that engage and inspire. Our comprehensive approach includes experiential marketing, brand-specific promotional events, and strategies that enhance visibility and audience interaction.',
     icon: 'MegaphoneIcon',
-    heroImage: '/background.jpeg',
+    heroImage: '/images/event7.jpg',
     processSteps: [
       {
         title: 'Experiential Marketing',
@@ -260,7 +260,7 @@ const servicesData: Record<string, ServiceData> = {
     subtitle: 'Strategic Business Connection Facilitation',
     description: 'We organize strategic, pre-arranged appointments to connect buyers, sellers, and partners. Ideal for small to medium-sized enterprises, our B2B meetings are designed to build valuable business connections, attract potential partners or clients, and maximize your participation and ROI in any event.',
     icon: 'UserGroupIcon',
-    heroImage: '/background.jpeg',
+    heroImage: '/images/p12.jpg',
     processSteps: [
       {
         title: 'Strategic Planning & Matchmaking',
@@ -298,7 +298,7 @@ const servicesData: Record<string, ServiceData> = {
     subtitle: 'End-to-End Communication Support',
     description: 'We provide comprehensive communication support to strengthen your public image and enhance stakeholder relationships. Our services include corporate communications, PR strategy, media liaison, stakeholder engagement, reputation and crisis management, and social media management.',
     icon: 'ChatBubbleLeftRightIcon',
-    heroImage: '/background.jpeg',
+    heroImage: '/images/p15.jpg',
     processSteps: [
       {
         title: 'Corporate Communications',
@@ -341,7 +341,7 @@ const servicesData: Record<string, ServiceData> = {
     subtitle: 'Stunning Design and Flawless Execution',
     description: 'Bring your event vision to life with stunning design and flawless execution. Our comprehensive design and production services include event floor plan development, 3D event rendering, stage and lighting design, décor and aesthetic coordination, and full on-site setup and production management.',
     icon: 'PaintBrushIcon',
-    heroImage: '/background.jpeg',
+    heroImage: '/images/event10.jpg',
     processSteps: [
       {
         title: 'Event Floor Plan Development',
@@ -384,7 +384,7 @@ const servicesData: Record<string, ServiceData> = {
     subtitle: 'Quality Vendor Sourcing and Management',
     description: 'Ensure every vendor meets your standards and delivers quality service through our comprehensive vendor management approach. We handle sourcing and vetting reliable vendors, managing contracts, timelines, and deliverables, ensuring seamless integration and execution.',
     icon: 'TruckIcon',
-    heroImage: '/background.jpeg',
+    heroImage: '/images/p16.jpg',
     processSteps: [
       {
         title: 'Sourcing and Vetting Reliable Vendors',
@@ -422,7 +422,7 @@ const servicesData: Record<string, ServiceData> = {
     subtitle: 'End-to-End Logistics Support',
     description: 'Keep your event running smoothly with our comprehensive logistics management services. We provide end-to-end logistics support including comprehensive coordination services, transportation and scheduling management, vendor coordination, and complete on-site execution.',
     icon: 'ClipboardDocumentListIcon',
-    heroImage: '/background.jpeg',
+    heroImage: '/images/event8.jpg',
     processSteps: [
       {
         title: 'Comprehensive Coordination Services',

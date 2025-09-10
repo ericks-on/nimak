@@ -50,56 +50,56 @@ const ServicesSection = ({ className = '' }: ServicesSectionProps) => {
   const services: Service[] = [
     {
       id: 'event-concept',
-      image: '/background.jpeg',
+      image: '/images/event2.jpg',
       title: 'Event Concept Creation',
       description: 'We take a holistic approach to crafting creative event concepts that resonate with your audience',
       href: '/services/event-concept'
     },
     {
       id: 'brand-management',
-      image: '/background.jpeg',
+      image: '/images/event3.jpg',
       title: 'Brand Management',
       description: 'Strategic brand development and management services',
       href: '/services/brand-management'
     },
     {
       id: 'event-marketing',
-      image: '/background.jpeg',
+      image: '/images/event7.jpg',
       title: 'Event Marketing',
       description: 'Elevate your brand\'s presence through impactful event marketing strategies',
       href: '/services/event-marketing'
     },
     {
       id: 'b2b-meetings',
-      image: '/background.jpeg',
+      image: '/images/p12.jpg',
       title: 'B2B Meetings',
       description: 'Strategic, pre-arranged appointments to connect buyers, sellers, and partners',
       href: '/services/b2b-meetings'
     },
     {
       id: 'pr-communication',
-      image: '/background.jpeg',
+      image: '/images/p15.jpg',
       title: 'PR & Communication',
       description: 'End-to-end communication support to strengthen your public image',
       href: '/services/pr-communication'
     },
     {
       id: 'event-design',
-      image: '/background.jpeg',
+      image: '/images/event10.jpg',
       title: 'Event Design & Production',
       description: 'Bring your event vision to life with stunning design and flawless execution',
       href: '/services/event-design'
     },
     {
       id: 'vendor-management',
-      image: '/background.jpeg',
+      image: '/images/p16.jpg',
       title: 'Vendor Management',
       description: 'Ensure every vendor meets your standards and delivers quality',
       href: '/services/vendor-management'
     },
     {
       id: 'logistics-management',
-      image: '/background.jpeg',
+      image: '/images/event8.jpg',
       title: 'Logistics Management',
       description: 'End-to-end logistics support to keep your event running smoothly',
       href: '/services/logistics-management'

@@ -136,6 +136,9 @@ p {
   text-decoration: none;
 }
 
+.hero-img {
+  height: 600px !important;
+}
 .btn:focus {
   outline: none;
   box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
