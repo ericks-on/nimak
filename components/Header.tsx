@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { 
   Bars3Icon, 
   XMarkIcon, 
@@ -98,17 +99,13 @@ const Header = () => {
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-3">
-              <div className="bg-gradient-nimak p-3 rounded-xl">
-                <span className="text-white font-bold text-xl">N</span>
-              </div>
-              <div>
-                <span className="text-2xl font-bold text-gradient-nimak">
-                  NIMAK
-                </span>
-                <div className="text-sm text-gray-600 font-medium">
-                  Media & Events
-                </div>
-              </div>
+              <Image
+                src="/images/logo.png"
+                alt="Nimak Media & Events"
+                width={150}
+                height={60}
+                className="h-12 w-auto"
+              />
             </Link>
 
             {/* Desktop Navigation */}
