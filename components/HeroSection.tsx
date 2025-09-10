@@ -18,7 +18,7 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({ 
-  backgroundImage = '/images/hero2.png',
+  backgroundImage = '/images/hero4.jpg',
   className = '' 
 }: HeroSectionProps) => {
   const [isVisible, setIsVisible] = useState(false)

@@ -107,7 +107,7 @@ export default function AboutPage() {
       <section className="relative py-20 bg-gradient-nimak overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/hero1.png"
+            src="/images/hero1.jpg"
             alt="About Nimak Media & Events - Professional event planning"
             fill
             className="object-cover opacity-20"
