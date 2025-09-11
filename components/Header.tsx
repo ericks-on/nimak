@@ -98,14 +98,19 @@ const Header = () => {
         <div className="container-custom">
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-3">
-              <Image
-                src="/images/logo.png"
-                alt="Nimak Media & Events"
-                width={150}
-                height={60}
-                className="h-12 w-auto"
-              />
+            <Link href="/" className="flex items-center space-x-3 group">
+              <div className="relative">
+                <div className="absolute inset-0 bg-white rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105"></div>
+                <div className="relative bg-white rounded-2xl p-3 shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
+                  <Image
+                    src="/images/logo.png"
+                    alt="Nimak Media & Events"
+                    width={200}
+                    height={80}
+                    className="h-16 w-auto"
+                  />
+                </div>
+              </div>
             </Link>
 
             {/* Desktop Navigation */}
